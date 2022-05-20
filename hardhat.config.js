@@ -11,7 +11,7 @@ module.exports = {
       url: "https://matic-mumbai.chainstacklabs.com", // ploygon testnet RPC url
       chainId: 80001, // network chain id
       gasPrice: 20000000000,
-      accounts: [`0x${"588d9c207ae3f33d5a71dd1b251ebce7a1e8fe960ac8094d00fcfdd5a4ce8363"}`], // metamask test account3 private key
+      accounts: [`0x${"6fed9b64d6cb8eebbafcfa2a4883ec87368cfc8226dbbbe7314c5b8801528bf5"}`], // metamask test account3 private key
     },
     mainnet: {
       url: "https://rpc-mainnet.maticvigil.com/", // ploygon mainnet RPC url
@@ -22,6 +22,3 @@ module.exports = {
   },
   solidity: "0.8.4",
 };
-
-
-// dklfvads,vndkvdn: 0xf01054587aDaE552682195d3A449588D95a09c27

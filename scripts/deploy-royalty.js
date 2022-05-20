@@ -14,12 +14,12 @@ async function main() {
   // await hre.run('compile');
 
   // We get the contract to deploy
-  const NFT = await hre.ethers.getContractFactory("NFT");
-  const nft = await NFT.deploy("https://jsonplaceholder.typicode.com/todos/1");  // api url for testing
+  const NFTContract = await hre.ethers.getContractFactory("NFTContract");
+  const nftContract = await NFTContract.deploy("https://jsonplaceholder.typicode.com/todos/1");  // api url for testing
 
-  await nft.deployed();
+  await nftContract.deployed();
 
-  console.log("Address :", nft.address);
+  console.log("Address :", nftContract.address);
 }
 
 // We recommend this pattern to be able to use async/await everywhere

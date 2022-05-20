@@ -1,10 +1,8 @@
 const express = require("express");
 const Router = express.Router();
-const nftController = require('../controllers/nftController');
 
-// create nft
-Router.post("/", nftController.upload, nftController.nft_create);
+const { NftsController } = require("../controllers/NftsController");
 
-Router.get("/:nftId", nftController.nft_details);
+Router.post("/mint-nft/", NftsController.mint);
 
 module.exports = Router;
